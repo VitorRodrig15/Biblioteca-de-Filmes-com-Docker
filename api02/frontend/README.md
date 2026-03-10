@@ -1,40 +1,37 @@
+# Frontend - Biblioteca de Filmes (React)
 
----
-
-# API02 - Catálogo de Filmes (FastAPI + melhorias)
-
-Esta é a segunda versão da API, com melhorias em relação à `api01`. Também roda em **FastAPI** e está containerizada com **Docker**.
+Este é o frontend da aplicação, feito em **React** e containerizado com **Docker**.  
+Ele consome as APIs (`api01` e `api02`) e exibe a interface web para o catálogo de filmes.
 
 ---
 
 ## 🚀 Comandos Docker utilizados
 
 ### 1. Construir a imagem
-bash
-docker build -t api02-filmes .
-👉 Cria uma imagem Docker chamada api02-filmes
+No terminal:
+docker build -t frontend-filmes .
+
+👉 Cria uma imagem Docker chamada frontend-filmes a partir do Dockerfile presente nesta pasta.
 
 2. Rodar o container
-docker run -d -p 3000:3000 api02-filmes
-👉 Executa a API em segundo plano, mapeando a porta 8000 do container para a porta 8001 da máquina local.
-Assim, você acessa a API em: http://localhost:8001 (localhost).
+docker run -d -p 3000:3000 frontend-filmes
 
-3. Usar com Docker Compose
-Se estiver usando o docker-compose.yml na raiz do projeto, para unificar os processos:
+👉 Executa o frontend em segundo plano (-d), mapeando a porta 3000 do container para a porta 3000 da máquina local.
+Assim, você acessa a interface em: http://localhost:3000.
+
+4. Usar com Docker Compose
+Se estiver usando o docker-compose.yml na raiz do projeto:
 docker-compose up --build
-👉 Sobe todos os serviços (API01, API02 e frontend) de uma vez, em vez de precisar dar run no frontend e no backend separadamente
 
+👉 Sobe todos os serviços (API01, API02 e frontend) de uma vez, já integrados
 
 📂 Estrutura
-- main.py → código principal da API
-- requirements.txt → dependências Python
-- Dockerfile → instruções para construir a imagem
+- src/ → código React (componentes, páginas, estilos)
+- package.json → dependências e scripts do projeto
+- Dockerfile → instruções para construir a imagem do frontend
 
 
----
+💡 Objetivo
+O frontend conecta com as APIs e exibe os filmes de forma simples e interativa.
+É a camada visual do sistema, permitindo que o usuário navegue e veja os dados fornecidos pelo backend.
 
-## ✅ Resultado
-- Cada pasta (`api01` e `api02`) terá seu próprio README explicando **como rodar com Docker** e **o que cada comando faz**.  
-- Isso deixa o projeto mais organizado e fácil de entender para quem for usar ou contribuir.
-
----
