@@ -20,6 +20,7 @@ docker-compose up --build
 - API → http://localhost:8000/api (localhost no navegador)
 - Frontend → http://localhost:3000 (localhost no navegador)
 
+
 📂 Estrutura do projeto
 - api01/ → primeira versão da API em FastAPI
 - api02/ → segunda versão da API (com melhorias)
@@ -27,9 +28,11 @@ docker-compose up --build
 - docker-compose.yml → orquestração dos serviços, fazendo iniciar uma unica parte ligando ambos as api's
 - .gitignore → arquivos ignorados no Git
 
+
 💡 Objetivo
 Esse projeto foi feito para praticar integração de serviços com Docker e mostrar como é possível rodar backend e frontend juntos de forma simples.
 É um exemplo leve, mas que pode ser expandido para algo maior.
+
 
 ✨ Próximos passos
 - Adicionar banco de dados (PostgreSQL ou Mysql)
