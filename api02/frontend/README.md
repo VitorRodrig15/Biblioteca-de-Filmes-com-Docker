@@ -1,9 +1,6 @@
 
 ---
 
-## 📄 Exemplo de README para `api02` que seria o Frontend desta aplicação
-
-
 # API02 - Catálogo de Filmes (FastAPI + melhorias)
 
 Esta é a segunda versão da API, com melhorias em relação à `api01`. Também roda em **FastAPI** e está containerizada com **Docker**.
