@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  api01:
+    build: ./api01
+    container_name: api01
+    ports:
+      - "8000:8000"
+
+  api02:
+    build: ./api02
+    container_name: api02
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api01
+
+#Compõem os Serviços em um unico lugar para iniciar no terminal, em vez de um por um manualmente.    
