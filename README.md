@@ -8,6 +8,12 @@ A ideia é mostrar como integrar backend e frontend em um ambiente isolado e fá
 - Docker & Docker Compose → para orquestrar os serviços
 - Python e Node.js → base do backend e frontend
 
+- ![Backend_imagem.png](Backend_imagem.png)
+*JSON com a funcionalidade do backend*
+
+![Frontend_imagem.png](Frontend_imagem.png)
+*Frontend inicial do projeto com a interface para visualização*
+
 ⚙️ Como rodar o projeto
 - Clone este repositório:
 git clone https://github.com/VitorRodrig15/Biblioteca-de-Filmes-com-Docker.git
