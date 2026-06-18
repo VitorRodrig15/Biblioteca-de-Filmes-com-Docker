@@ -11,6 +11,7 @@ A ideia é mostrar como integrar backend e frontend em um ambiente isolado e fá
 - ![Backend_imagem.png](Backend_imagem.png)
 *JSON com a funcionalidade do backend*
 
+
 ![Frontend_imagem.png](Frontend_imagem.png)
 *Frontend inicial do projeto com a interface para visualização*
 
